@@ -1,0 +1,75 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Ensure the content doesn't exceed the width of the viewport */
+.navbar .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Allows wrapping when content overflows */
+}
+
+/* Logo section */
+.logo h2 {
+  color: #fff;
+  margin: 0;
+}
+
+/* Individual link */
+.nav-links li {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+/* Link styling */
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Prevents link text from breaking */
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* For smaller screens, stack items vertically */
+  .navbar {
+      flex-direction: column;
+      padding: 10px;
+  }
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  .nav-links li {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/* Main content area */
+.content {
+  padding-top: 60px; /* Adjust based on the height of your navbar */
+}
