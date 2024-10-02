@@ -1,50 +1,126 @@
-/* Search.css */
+.container {
+  display: flex; /* Use flexbox for horizontal layout */
+  max-width: 1200px; /* Limit max width of the container */
+  margin: 100px auto; /* Center the container */
+}
 
 .search-container {
-    padding: 40px; /* Add padding for better spacing */
-    max-width: 600px; /* Limit the width for readability */
-    margin: 100px auto; /* Center the container */
-    margin-top: 160px;
-    background-color: #f8f9fa; /* Light background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: center; /* Center text */
+  flex: 1; /* Allow search container to take up space */
+  padding: 40px; /* Add padding for better spacing */
+  max-width: 300px; /* Limit width for search */
+  margin-right: 20px; /* Space between search and results */
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center text */
+}
+
+.results-container {
+  flex: 2; /* Allow results container to take up more space */
+  padding: 40px; /* Add padding */
+  background-color: #ffffff; /* White background for results */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 h1 {
-    color: #333; /* Dark color for headings */
-    margin-bottom: 20px; /* Spacing below heading */
+  color: #333; /* Dark color for headings */
+  margin-bottom: 20px; /* Spacing below heading */
+}
+
+h2 {
+  color: #333; /* Dark color for subheading */
+  margin-bottom: 20px; /* Spacing below subheading */
 }
 
 .search-options {
-    margin-bottom: 20px; /* Space below radio buttons */
+  margin-bottom: 20px; /* Space below radio buttons */
 }
 
 label {
-    margin-right: 20px; /* Space between radio buttons */
-    color: #555; /* Darker color for labels */
+  margin-right: 20px; /* Space between radio buttons */
+  color: #555; /* Darker color for labels */
 }
 
 .search-input {
-    width: 100%; /* Full width */
-    padding: 10px; /* Padding inside input */
-    margin-bottom: 20px; /* Space below input */
-    border: 1px solid #ccc; /* Border styling */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside input */
+  margin-bottom: 20px; /* Space below input */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
 }
 
 .search-button {
-    padding: 10px 20px; /* Padding for the button */
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s ease; /* Smooth transition */
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .search-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+.poster img {
+  max-width: 100%; /* Ensure image fits */
+  height: auto; /* Maintain aspect ratio */
+  width: 300px; /* Fixed width for the poster */
+  margin-right: 20px; /* Space between poster and details */
+}
+
+.details {
+  flex-grow: 1; /* Make the details take up the remaining space */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details p {
+  margin: 10px 0; /* Space between each paragraph */
+}
+.ratings{
+    margin-top: 120px;
+}
+
+.ratings strong {
+    margin-bottom: 10px ;
+    display: inline-block; 
+  }
+  
+
+.ratings ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ratings li {
+  margin-bottom: 5px;
+}
+
+.title {
+  text-align: center; /* Centers the title */
+  margin: 10px 0; /* Reduce space above and below */
+  font-size: 2rem; /* Adjust the font size if necessary */
+  font-weight: bold; /* Make the title bold */
+  color: #333; /* Optional: change the title color */
 }
